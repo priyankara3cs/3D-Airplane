@@ -84,6 +84,26 @@ We have a wide range of beverages!`,
         title: "Movies",
         subtitle: `We provide a large selection of medias, we highly recommend you Porco Rosso during the flight`,
       },
+      {
+        cameraRailDist: -1,
+        position: new Vector3(
+          curvePoints[5].x - 3,
+          curvePoints[5].y,
+          curvePoints[5].z
+        ),
+        title: "Test Title 1",
+        subtitle: "Test Subtitle Here 1",
+      },
+      {
+        cameraRailDist: 1,
+        position: new Vector3(
+          curvePoints[6].x + 3.5,
+          curvePoints[6].y,
+          curvePoints[6].z
+        ),
+        title: "Title 2",
+        subtitle: "Subtitle Here 2",
+      },
     ];
   }, []);
 
@@ -433,7 +453,7 @@ We have a wide range of beverages!`,
   });
 
   const planeInTl = useRef();
-  const planeOutTl = useRef();
+  const planeOutTl = useRef(); 
 
   useLayoutEffect(() => {
     tl.current = gsap.timeline();
