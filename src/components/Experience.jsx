@@ -460,19 +460,19 @@ We have a wide range of beverages!`,
 
     tl.current.to(backgroundColors.current, {
       duration: 1,
-      colorA: "#6f35cc",
-      colorB: "#ffad30",
+      colorA: "#3535cc",
+      colorB: "#abaadd",
     });
-    tl.current.to(backgroundColors.current, {
-      duration: 1,
-      colorA: "#424242",
-      colorB: "#ffcc00",
-    });
-    tl.current.to(backgroundColors.current, {
-      duration: 1,
-      colorA: "#81318b",
-      colorB: "#55ab8f",
-    });
+    // tl.current.to(backgroundColors.current, {
+    //   duration: 1,
+    //   colorA: "#424242",
+    //   colorB: "#ffcc00",
+    // });
+    // tl.current.to(backgroundColors.current, {
+    //   duration: 1,
+    //   colorA: "#81318b",
+    //   colorB: "#55ab8f",
+    // });
 
     tl.current.pause();
 

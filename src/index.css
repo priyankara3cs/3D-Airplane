@@ -103,11 +103,11 @@ body {
 }
 
 .intro__scroll {
-  opacity: 0;
+  opacity: 1;
   color: white;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.00rem;
   position: absolute;
   top: 24vh;
 }
