@@ -7,6 +7,9 @@ import { Experience } from "./components/Experience";
 import { Overlay } from "./components/Overlay";
 import { usePlay } from "./contexts/Play";
 
+import Pic from "../public/images/pexels-lukas-kloeppel.jpg";
+
+
 function App() {
   const { play, end } = usePlay();
 
@@ -32,7 +35,7 @@ function App() {
         }}
       >
         <img
-          src="../public/images/pexels-lukas-kloeppel.jpg"
+          src={Pic}
           alt=""
           style={{
             objectFit: "cover",
