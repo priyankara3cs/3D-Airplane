@@ -4,8 +4,8 @@ import { gsap } from "gsap";
 import { useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import * as THREE from "three";
 import { Euler, Group, Vector3 } from "three";
-import { usePlay } from "../contexts/Play";
-import { fadeOnBeforeCompile } from "../utils/fadeMaterial";
+import { usePlay } from "../../contexts/Play";
+import { fadeOnBeforeCompile } from "../../utils/fadeMaterial";
 import { Airplane } from "./Airplane";
 import { Background } from "./Background";
 import { Cloud } from "./Cloud";
@@ -453,7 +453,7 @@ We have a wide range of beverages!`,
   });
 
   const planeInTl = useRef();
-  const planeOutTl = useRef(); 
+  const planeOutTl = useRef();
 
   useLayoutEffect(() => {
     tl.current = gsap.timeline();

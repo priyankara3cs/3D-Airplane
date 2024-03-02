@@ -76,6 +76,7 @@ body {
   top: 42px;
   transform: scale(0.25);
   transform-origin: center top;
+  color: #c3e7f800;
 }
 
 .spinner {

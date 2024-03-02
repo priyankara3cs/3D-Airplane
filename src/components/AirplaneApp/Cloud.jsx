@@ -1,15 +1,15 @@
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
-import { fadeOnBeforeCompile } from "../utils/fadeMaterial";
+import { fadeOnBeforeCompile } from "../../utils/fadeMaterial";
 
 export function Cloud({ sceneOpacity, ...props }) {
-  const { nodes, materials } = useGLTF("./models/cloud/model.gltf");
+  const { nodes, materials } = useGLTF("../models/cloud/model.gltf");
 
   const materialRef = useRef();
 
   useFrame(() => {
-    materialRef.current.opacity = sceneOpacity.current;
+    materialRef.current.opacity = sceneOpacity.current * 0.9; // Set to 90% transparency
   });
 
   return (
